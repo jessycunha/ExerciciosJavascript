@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+    <script language="javascript">
+        /*Faça um programa que leia um número inteiro qualquer e exiba a mensagem dizendo se o número é primo ou não. OBS: Número primo é aquele que é divisível somente por 1 e por ele mesmo*/
+        primo = parseInt(prompt("Digite um número inteiro: "));
+        i=1;
+        num=0;
+        while (i<=primo){
+            resto = primo%i;
+            if (resto==0){
+                num++;
+            }
+            i++;
+        }
+        if (num==2){
+            document.write(primo + " é um número primo");
+        }
+        else{
+            document.write(primo + " não é um número primo");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

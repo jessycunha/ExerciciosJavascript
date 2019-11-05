@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+    <script language="javascript">
+        /*Faça um programa que leia um valor inteiro qualquer e exiba a mensagem dizendo se o número lido é perfeito ou não. OBS: um número perfeito é um número inteiro para o qual a soma de todos os seus divisores positivos próprios (excluindo ele mesmo) é igual ao próprio número. Os quatro primeiros números perfeitos: 6, 28, 496 e 8.128*/
+        num = parseInt(prompt("Digite um número inteiro: "));
+        i = 1;
+        soma = 0;
+        while (i<num){
+            resto = num%i
+            if (resto==0){
+                soma = soma + i;
+            }
+            i++;
+        }
+        if (soma == num){
+            document.write("O número lido é perfeito");
+        }
+        else{
+            document.write("O número lido não é perfeito");
+        }
+        
+        
+
+    </script>
+</head>
+<body>
+</body>
+</html>

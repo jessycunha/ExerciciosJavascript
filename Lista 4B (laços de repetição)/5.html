@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+    <script language="javascript">
+        /*Faça um programa que imprima os 10 primeiros números da sequencia de Fibonacci. OBS: Os dois primeiros termos da série são 1 e 1 e, os demais, são gerados pela soma do número atual + seu antecessor.
+        Exemplo:    
+        Os 10 primeiros termos são: 1, 1, 2, 3, 5, 8, 13, 21, 34 e 55
+                                                                    
+            termo = 2 + 1  termo = 3
+            antecessor = 2
+            atual = 3
+
+            termo = 3 + 2  termo = 5
+            antecessor = 3
+            atual = 5
+
+            termo = 5 + 3  termo = 8
+            anteessor = 5
+            atual = 8
+        */
+        i = 1;
+        atual = 1;
+        antecessor = 0;
+        termo = 1;
+        while(i<11){
+            document.write(termo + " ");
+            termo = atual + antecessor;             
+            antecessor = atual;                
+            atual = termo;
+            i++;
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
