@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>8</title>
+        <script language=javascript>
+            /*Um posto está vendendo combustíveis com as seguintes tabela de descontos:
+                Álcool:
+                -até 20 litros, desconto de 3% por litro
+                -acima de 20 litros, desconto de 5% por litro
+                Gasolina:
+                -até 20 litros, desconto de 4% por litro
+                -acima de 20 litros, desconto de 6% por litro
+            Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente, sabendo-se que o preço do litro da gasolina é R$3,30 e o preço do litro do álcool é R$2,90*/
+            combustivel = prompt("Qual combustível?: a para álcool g para gasolina");
+            if (combustivel=="a"){
+                litrosa = parseFloat(prompt("Quantos litros de álcool?"));
+                if (litrosa<20){
+                    alert("Total a pagar: R$" + ((litrosa*2.9)*0.97).toFixed(2));
+                }
+                else{
+                    alert("Total a pagar: R$" + ((litrosa*2.9)*0.95).toFixed(2));
+                }
+            }
+            else if (combustivel=="g"){
+                litrosg = parseFloat(prompt("Quantos litros de gasolina?"));
+                if (litrosg<20){
+                    alert("Total a pagar: R$" + ((litrosg*3.3)*0.96).toFixed(2));
+                }
+                else{
+                alert("Total a pagar: R$" + ((litrosg*3.3)*0.94).toFixed(2));
+                }
+            }
+            else{
+                alert("Não temos esse tipo de combustível");
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

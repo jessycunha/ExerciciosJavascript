@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>5</title>
+        <script language=javascript>
+            /*Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam ou não um triângulo. OBS: para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados*/
+            a = parseFloat(prompt("Digite um número:"));
+            b = parseFloat(prompt("Digite outro número:"));
+            c = parseFloat(prompt("Digite um outro número:"));
+            A = b + c
+            B = a + c
+            C = a + b
+
+            if (a<A){
+                if (b<B){
+                    if (c<C){
+                        alert("Forma um triângulo");
+                    }
+                }
+            }       
+            else{
+                alert("Não forma um triângulo");
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

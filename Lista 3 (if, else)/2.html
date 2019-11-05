@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>2</title>
+        <script language=javascript>
+            /*Ler o salário fixo e o valor das vendas efetuadas pelo vencedor de uma empresa. Sabendo-se que ele recebe uma comissão de 3% sobre o total das vendas até R$1.500,00 e 5% sobre o que ultrapassar este valor, calcular e escrever o seu salário total*/
+            salario = parseFloat(prompt("Qual é o seu salário?"));
+            vendas = parseFloat(prompt("Quanto você vendeu?"));
+            if (vendas<=1500){
+                alert("Você irá receber R$" + (salario + vendas*0.03).toFixed(2));
+            }
+            else if (vendas>1500){
+                alert("Você irá receber R$" + (salario + (1500*0.03) + ((vendas-1500)*0.05)).toFixed(2));}
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>4</title>
+        <script language=javascript>
+            //Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores
+            n1 = parseFloat(prompt("Digite um número:"));
+            n2 = parseFloat(prompt("Digite outro número:"));
+            n3 = parseFloat(prompt("Digite um outro número:"));
+            if (n1>n2){
+                if (n2>n3){
+                alert("A soma dos 2 maiores é " + (n1+n2));
+                }
+                else{
+                alert("A soma dos 2 maiores é " + (n1+n3));
+                }
+            }
+            else if (n2>n1){
+                if (n1>n3){
+                alert("A soma dos 2 maiores é " + (n2+n1));
+                }
+                else{
+                alert("A soma dos 2 maiores é " + (n2+n3));
+                }
+            }
+            else if (n3>n1){
+                if (n1>n2){
+                alert("A soma dos 2 maiores é " + (n3+n1));
+                }
+                else{
+                alert("A soma dos 2 maiores é " + (n3+n2));
+                }
+            }
+            else{
+                alert("Alguma coisa deu errada kkkkk")
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>9</title>
+        <script language=javascript>
+            /*Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
+                - Ter no mínimo 65 anos de idade
+                - Ter trabalhado no mínimo 30 anos
+                - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos
+            Com base nas informações acima, faça um algoritmo que leia: o número do empregado (código), o ano de nascimento e o ano de seu ingresso na empresa. O programa deverá escrever a idade, o tempo de trabalho do empregado e a mensagem "Requerer aposentadoria" ou "Não requerer"
+            */
+            codigo = prompt("Qual é o número da sua matrícula?");
+            nasc = parseInt(prompt("Qual é a sua data de nascimento?"));
+            idadeMinima = 2019 - nasc;
+            if (idadeMinima>=65){
+                alert("Requerer aposentadoria");
+            }
+            else{
+                admissao = parseInt(prompt("Qual foi o ano da sua admissão"));
+                tempoMinimo = 2019 - admissao;
+            }
+            if (tempoMinimo>=30){
+                alert("Requerer aposentadoria");
+            }
+            else if (idadeMinima>=60){
+                if (tempoMinimo>=25){
+                    alert("Requerer aposentadoria");
+                }
+                else{
+                alert("Você ainda não pode requerer aposentadoria");
+            }
+            else{
+                alert("Você ainda não pode requerer aposentadoria");
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

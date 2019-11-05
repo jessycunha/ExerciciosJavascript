@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>5</title>
+        <script language=javascript>
+            /*Elabore um algoritmo que leia a matrícula e o número de horas trabalhadas de um operário e calcule o seu salário sabendo-se que:
+            a) Valor da hora trabalhada = R$5.20
+            b) Quando o número de horas excederem 44, as horas excedentes valerão cada uma = R$8.40
+            */
+            matricula = parseInt (prompt ("Qual o número da sua matrícula"));
+            horasTrab = parseFloat (prompt ("Quantas horas você trabalhou nesta semana?"));
+            horaExtra = horasTrab - 44;
+            valorHora = 5.2;
+            valorHoraExtra = 8.4;
+            salario = horasTrab * valorHora;
+            if (horasTrab > 44) {
+            alert ("Seu salário semanal será R$ " + (44 * valorHora + horaExtra * valorHoraExtra).toFixed(2));
+            }
+            else
+            alert ("Seu salário semanal será R$ " + salario.toFixed(2));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

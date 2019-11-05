@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>4</title>
+        <script language=javascript>
+            /*Construa um algortimo para calcular o peso ideal de uma pessoa. Dados de entrada: altura e sexo. Fórmula para o cálculo:
+            PESO IDEAL HOMEM: (72.7*h)-58.0
+            PESO IDEAL MULHER: (62.1*h)-44.7
+            */
+            h = parseFloat (prompt ("Qual a sua altura?"));
+            sexo = prompt ("Qual é o seu sexo? Digite f para feminino e m para masculino");
+            pim = (72.7*h)-58;
+            pif = (62.1*h)-44.7;
+            if (sexo=="m")
+            alert ("Seu peso ideal é "+pim);
+            else
+            alert ("Seu peso ideal é "+pif);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
