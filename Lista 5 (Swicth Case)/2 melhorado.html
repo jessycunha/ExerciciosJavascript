@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>2 melhorado</title>
+        <script language=javascript>
+            /*Faça um programa que leia o nome e a idade de várias pessoas.
+            Ao final de cada pessoa, o programa deve exibir a mensagem:
+            "A leitura deve continuar - (S) ou parar - (N)".
+            Caso seja escolhida a opção "S", ler o próximo nome e idade. Caso a opção seja "N", finalizar a leitura e exibir na tela as seguintes informações:
+            Nome da pessoa mais idosa e idade;
+            Nome da pessoa mais nova e idade;
+            Média de idade;
+            Total das pessoas lidas.
+            */
+            mIdade = 0;
+            continua="s"
+            i=0
+            velho=-1;
+            novo=1000;
+            while (continua=="s"){
+                
+                nome = prompt("Qual o seu nome?");
+                idade = parseInt(prompt("E a sua idade?"));
+                mIdade = mIdade + idade;
+                continua = prompt("A leitura deve continuar?\ns - sim\nn - não");
+                i++;
+                if (velho<idade){
+                    maisvelho = nome;
+                    velho = idade;
+                }
+                if (novo>idade){
+                    maisnovo = nome;
+                    novo = idade;
+                }
+            }
+            document.write("No total, foram " + i + " pessoas e a média de idade entre eles é " + mIdade/i + " anos.\nO mais velho é " + maisvelho + ", e o mais novo é " + maisnovo);
+            /*
+            a=5                     a=20
+            b=10                    b=4
+            c=3                     c=12
+            mais velho = b          d=8 
+            mais novo = c           mais velho = a
+            média = 6               mais novo = b
+            total pessoas = 3       média = 11
+                                    total pessoas = 4
+            */
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

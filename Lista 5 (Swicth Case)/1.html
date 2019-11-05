@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+    <script language="javascript">
+        /*Usando a função Switch Case, desenvolva um programa que exiba um "menu" com as seguintes opções:
+        1 - Reais para Dolares
+        2 - Dolares para Reais
+        3 - Reais para Libras
+        4 - Libras para Reais
+        5 - Dolares para Libras
+        6 - Libras para Dolares
+        7 - Fim
+        Em seguida, solicitar um valor de conversão e exibir o resultado, de acordo com as moedas escolhidas, utilizando como referência os valores abaixo:
+        Libras: R$5,14
+        Dolar: R$4,44
+        */
+        opcao=1;
+        while(opcao<7){
+            opcao = parseInt(prompt("Escolha uma opção para conversão monetária:\n1 - Reais para Dolares\n2 - Dolares para Reais\n3 - Reais para Libras\n4 - Libras para Reais\n5 - Dolares para Libras\n6 - Libras para Dolares\n7 - Fim "));
+            if (opcao!=7){
+            valor = parseFloat(prompt("Digite o valor para a conversão: "));
+            }
+            switch(opcao){
+                case 1:
+                resultado = valor/4.44;
+                break;
+                case 2:
+                resultado = valor*4.44;
+                break;
+                case 3:
+                resultado = valor/5.14;
+                break;
+                case 4:
+                resultado = valor*5.14;
+                break;
+                case 5:
+                resultado = valor/0.7;
+                break;
+                case 6:
+                resultado = valor*0.7;
+                break;
+            }
+            if (opcao<7){
+                alert(resultado);
+            }
+        }
+    </script>
+</body>
+</html>

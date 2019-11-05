@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <script language="javascript">
+        /*Faça um programa que leia um número menor e um número maior, ambos inteiros, e exiba a mensagem dizendo quantos números primos há entre eles. OBS: Número primo é aquele que é divisível somente por 1 e por ele mesmo*/
+        numMin = parseInt(prompt("Digite um número inicial: "));
+        numMax = parseInt(prompt("Digite um número final: "))     
+        div=1;                                                 
+        i=0;
+        primos=0;
+        while(numMin<=numMax){
+            while (div<=numMin){
+            resto = numMin%div
+                if (resto==0){
+                   i++;
+                }
+                div++;
+            }
+            if(i==2){
+            document.write(numMin + " ");
+            primos++
+            }
+            numMin++;
+            div=1;
+            i=0;
+        }
+        document.write("Há " + primos + " números primos entre " + numMin + " e " + numMax);
+        
+        /*
+        Outra forma de resolver:
+        
+        numMin = parseInt(prompt("Digite um número inicial: "));
+        numMax = parseInt(prompt("Digite um número final: "))  
+        primo=numMin
+        while(primo>=numMin && primo<=numMax){
+        i=1;
+        num=0;
+            while (i<=primo){
+            resto = primo%i;
+                if (resto==0){
+                num++;
+                }
+                i++;
+            }
+            if (num==2){
+                document.write(primo + " é um número primo ");
+            }
+            primo=primo+1
+        }
+        */
+    </script>
+</head>
+<body>
+</body>
+</html>
