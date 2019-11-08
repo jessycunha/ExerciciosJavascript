@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2h</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que pergunte em que turno vocÊ estuda. Peça para digitar M-matutino, V-vespertino ou N-noturno. Imprima a mensagem 'Bom dia!', 'Boa tarde!', 'Boa Noite!' ou 'Valor Inválido!', conforme o caso.
+        turno = prompt('Em qual turno você estuda? <br> M - Matutino; <br> V - Vespertino; <br> N - Noturno');
+        switch (turno){
+            case "m":
+            saudacao = "Bom dia!"
+            break;
+            case "v":
+            saudacao = "Boa tarde!"
+            break;
+            case "n":
+            saudacao = "Boa noite!"
+            break;
+            default;
+            saudacao = "Valor Inválido!"
+            break;
+        }
+        document.write(saudacao);
+    </script>
+</body>
+</html>
