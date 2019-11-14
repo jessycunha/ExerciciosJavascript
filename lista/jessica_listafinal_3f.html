@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3f</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles e a soma dos números
+        num1 = parseInt(prompt('Digite um número: '));
+        num2 = parseInt(prompt('Digite outro número:'));
+        num1 = num1 + 1
+        soma = 0
+        while (num1 < num2)
+        {
+            document.write(num1 + '<br/>');
+            soma = soma + num1;
+            num1++;
+        }
+        document.write('<br/>A soma deles é: '+  soma);
+    </script>
+</body>
+</html>

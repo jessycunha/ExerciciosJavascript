@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1g</title>
+</head>
+<body>
+    <script>
+        /*Faça um programa que pergunte quanto você ganha por hora e o número de horas trablahadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o Sindicato, faça um programa que nos informe o salário bruto, quanto pagou ao INSS, quanto pagou ao Sindicato e o salário líquido. Para calcular os descontos e o salário líquido, use a tabela abaixo:
+        + Salário Bruto: R$
+        - IR (11%): R$
+        - INSS (8%): R$
+        - Sindicato (5%): R$
+        = Salário Líquido: R$
+        (Obs: Salário Bruto - Descontos = Salário Líquido)*/
+        valorHora = parseFloat(prompt("Digite o valor da sua hora: "));
+        horasTrabalhadas = parseFloat(prompt("Digite quantas horas você trabalhou no mês: "));
+        salarioBruto = valorHora * horasTrabalhadas;
+        ir = salarioBruto * 0.11;
+        inss = salarioBruto * 0.08;
+        sindicato = salarioBruto * 0.05;
+        salarioLiquido = salarioBruto - ir - inss - sindicato;
+        document.write("+ Salário Bruto: R$ "+ salarioBruto.toFixed(2) <br> + "- IR (11%): R$ " + ir.toFixed(2) + "- INSS (8%): R$ " + inss.toFixed(2) + "- Sindicato (5%): R$ " + sindicato.toFixed(2) + "= Salário Líquido: R$ " + salarioLiquido.toFixed(2));
+
+    </script>    
+</body>
+</html>

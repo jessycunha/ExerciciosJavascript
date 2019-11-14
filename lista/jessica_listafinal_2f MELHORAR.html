@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2f</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que leia três números e mostre o maior e o menor deles
+        num1 = parseFloat(prompt('Digite um número: '));
+        num2 = parseFloat(prompt('Digite outro número: '));
+        num3 = parseFloat(prompt('Digite outro número: '));
+        if (num1>num2 && num3){
+            document.write(num1 + ' é o maior</br>');
+            if (num2>num3)
+                document.write(num3 + ' é o menor');
+            else
+                document.write(num2 + ' é o menor')
+        }
+        else if (num2>num1 && num3){
+            document.write(num2 + ' é o maior</br>');
+            if (num1>num3)
+                document.write(num3 + ' é o menor');
+            else
+                document.write(num1 + ' é o menor')
+        }
+        else{
+            document.write(num3 + ' é o maior</br>');
+            if (num1>num2)
+                document.write(num2 + ' é o menor');
+            else
+                document.write(num1 + ' é o menor')
+        }
+    </script>
+</body>
+</html>

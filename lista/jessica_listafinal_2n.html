@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2n</title>
+</head>
+<body>
+    <script>
+        /*Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+        a - Telefonou para a vítima?
+        b - Esteve no local do crime?
+        c - Mora perto da vítima?
+        d - Devia para a vítima?
+        e - Já trabalhou com a vítima?
+        O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".*/
+        a = parseInt(prompt('Telefonou para a vítima? \n 0 - Não \n 1 - Sim'));
+        b = parseInt(prompt('Esteve no local do crime? \n 0 - Não \n 1 - Sim'));
+        c = parseInt(prompt('Mora perto da vítima? \n 0 - Não \n 1 - Sim'));
+        d = parseInt(prompt('Devia para a vítima? \n 0 - Não \n 1 - Sim'));
+        e = parseInt(prompt('Já trabalhou com a vítima? \n 0 - Não \n 1 - Sim'));
+        soma = a + b + c + d + e
+        if (soma < 2)
+            document.write('Você é inocente');
+        else if (soma == 2)
+            document.write('Você é suspeito');
+        else if (soma == 3 || soma == 4)
+            document.write('Você é cúmplice');
+        else
+            document.write('Você é o assassino');
+    </script>
+</body>
+</html>
