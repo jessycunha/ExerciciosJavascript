@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3j</title>
+</head>
+<body>
+    <script>
+        /*Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
+        Ex: 5! = 5*4*3*2*1 = 120*/
+        numero = parseInt(prompt('Digite um número para calcular seu fatorial:'));
+        fatorial = numero
+        i = numero-1
+        while (i >=1)
+        {
+        numero = numero*i;
+        i--;
+        }
+        document.write(fatorial + '! = ' + numero);
+    </script>
+</body>
+</html>

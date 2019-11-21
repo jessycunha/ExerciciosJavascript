@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3i</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números ímpares
+        i = 1;
+        par = 0;
+        impar = 0;
+        while (i<=10)
+        {
+            numero = parseInt(prompt('Digite um número:'));
+            resto = numero%2;
+            if (resto == 0)
+            {
+                par++
+            }
+            else
+                impar++;
+            i++;
+        }
+        document.write('Números pares: ' + par + '<br> Números ímpares: ' + impar);
+    </script>
+</body>
+</html>

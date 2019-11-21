@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>2h</title>
+    <title>2j</title>
 </head>
 <body>
     <script>
         //Faça um programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto
-        ano = parseInt(prompt('Digite o ano:'));
-        resto4 = ano / 4
-        resto100 = ano / 100
-        resto400 = ano / 400
-        if (ano >= 400 && resto100 == 0 && resto400 == 0)
-            regra = 0
-            
-        if (resto == 0 && regra == 0)
+        numero = parseInt(prompt('Digite um número:'));
+        switch(numero)
         {
-            document.write(ano + ' é um ano bissexto.')
+            case 1:
+            dia = 'Domingo';
+            break;
+
+            case 2:
+            dia = 'Segunda-feira';
+            break;
+
+            case 3:
+            dia = 'Terça-feira';
+            break;
+
+            case 4:
+            dia = 'Quarta-feira';
+            break;
+
+            case 5:
+            dia = 'Quinta-feira';
+            break;
+
+            case 6:
+            dia = 'Sexta-feira';
+            break;
+
+            case 7:
+            dia = 'Sábado';
+            break;
+
+            default:
+            dia = 'Valor Inválido!';
+            break;
         }
-        
+        document.write(dia);
     </script>
 </body>
 </html>

@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>1h</title>
+    <title>1i</title>
 </head>
 <body>
     <script>
-        //Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$80,00. Informe ao usuário a quantidade de latas de tinta a serem compradas e o preço total.
-        metrosQuadrados = parseFloat(prompt("Quantos metros quadrados serão pintados?"));
-        
-        litro = metrosQuadrados / 3;
-        lata = 18
-        1 lata pinta 54m
-        
-        precoLata = 80
-        total = precoLata * latas
-        
-        document.write("Você irá precisar de " + lata + " latas e o total a pagar será de R$ " + total.toFixed(2));
+        //Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+       arquivo = parseFloat(prompt('Quantos MB tem o arquivo?'));
+       velocidade = parseFloat(prompt('Quantos Mbps de velocidade tem o link?'));
+       tempo = arquivo / ((velocidade/8));
+       document.write('Seu download se completará em ' + tempo + ' segundos');
     </script>    
 </body>
 </html>

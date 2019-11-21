@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3m</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que mostre todos os primos entre 1 e N, sendo N um número inteiro fornecido pelo usuário.
+        n = parseInt(prompt('Digite um número'));
+        for (i = 1; i <= n; i++)
+        {
+            num = 1;
+            a = 0;
+            while (num <= n)
+            {
+                resto = n%num
+                if (resto == 0)
+                    a++;
+                num++;
+            }
+            if (a==2)
+                document.write(n + "<br>");
+            
+        }
+    </script>
+</body>
+</html>
