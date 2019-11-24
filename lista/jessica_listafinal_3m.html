@@ -12,18 +12,19 @@
         n = parseInt(prompt('Digite um número'));
         for (i = 1; i <= n; i++)
         {
-            num = 1;
-            a = 0;
-            while (num <= n)
-            {
-                resto = n%num
-                if (resto == 0)
-                    a++;
-                num++;
+            primo = i;
+            x=1;
+            num=0;
+            while (x<=primo){
+                resto = primo%x;
+                if (resto==0){
+                    num++;
+                }
+                x++;
             }
-            if (a==2)
-                document.write(n + "<br>");
-            
+            if (num==2){
+                document.write(primo + " <br> ");
+            }
         }
     </script>
 </body>
