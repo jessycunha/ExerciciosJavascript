@@ -9,21 +9,19 @@
 <body>
     <script>
         /*Faça um programa que, dado um conjunto de N números, determine o menor valor, o maior valor e a soma dos valores. O programa deve finalizar quando o valor lido for 0 (zero)*/
-        numero = parseInt(prompt('Digite um número:'));
         soma = 0;
-        maior = numero;
-        menor = numero;
-        i = 1;
-        while ()
+        maior = true;
+        menor = true;
+        while (true)
         {   
-            soma = soma + numero;
-            if (numero < menor)
-                menor = numero;
-            if (numero > maior)
-                maior = numero;
             numero = parseInt(prompt('Digite um número:'));
             if (numero == 0)
                 break;
+            if (menor > numero)
+                menor = numero;
+            if (maior < numero)
+                maior = numero;
+            soma = soma + numero;
         }
         document.write('Menor = ' + menor + '<br> Maior = ' + maior + '<br> Soma = ' + soma);
     </script>

@@ -13,13 +13,12 @@
         resto4 = ano % 4
         resto100 = ano % 100
         resto400 = ano % 400
-        if (resto4 == 0)
+        if (resto4 == 0 && ano >=2000)
         {
-            if (ano >= 400 && resto100 == 0 && resto400 == 0)
-            {
-                document.write(ano + ' é um ano bissexto.')
-            }
-        document.write(ano + ' é um ano bissexto.')
+            if (resto100 == 0 && resto400 != 0)
+                document.write(ano + ' não é um ano bissexto.')
+            else
+            document.write(ano + ' é um ano bissexto.')
         }
         else
         {

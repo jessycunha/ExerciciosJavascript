@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3o</title>
+</head>
+<body>
+    <script>
+        /*Desenvolva um programa que faça a tabuada de um número qualquer inteiro que será digitado pelo usuário, mas a tabuada não deve necessariamente iniciar em 1 e terminar em 10, o valor inicial e final devem ser informados também pelo usuário, conforme exemplo abaixo:
+        - Montar a tabuada de: 5 (pedir essa informação para o usuário);
+        - Começar por: 4 (pedir essa informação para o usuário);
+        - Terminar em: 7 (pedir essa informação para o usuário);
+        Obs: Você deve verificar se o usuário não digitou o final menor que o inicial*/
+
+        tabuada = parseInt(prompt('Tabuada do:'));
+        inicio = parseInt(prompt('Inicia em:'));
+        fim = parseInt(prompt('Termina em:'));
+        while (inicio > fim)
+        {   
+            alert('O início deve ser menor do que o fim');
+            inicio = parseInt(prompt('Inicia em:'));
+            fim = parseInt(prompt('Termina em:'));
+        }
+        for (i = inicio; i <= fim; i++)
+        {
+            resultado = i*tabuada;
+            document.write(tabuada + ' x ' + i + ' = ' + resultado + '<br>');
+        }
+    </script>
+</body>
+</html>

@@ -10,23 +10,35 @@
     <script>
         //Faça um programa que peça uma data no formato dd/mm/aaa e determine se a mesma é uma data válida
         dia = parseInt(prompt('Digite o dia: '));
-        if (dia < 1 || dia > 31)
+        while (dia < 1 || dia > 31)
         {
-            while (dia < 1 || dia > 31)
-            {
-                alert('Dia Inválido!');
-                dia = parseInt(prompt('Digite o dia: '));
-            }
-        }    
+            alert('Dia Inválido!');
+            dia = parseInt(prompt('Digite o dia: '));
+        }
+
         mes = parseInt(prompt('Digite o mês:'));
-        if (mes < 1 || mes > 12)
+        while (mes < 1 || mes > 12)
         {
-            while (mes < 1 || mes > 12)
+            alert('Mês Inválido!');
+            mes = parseInt(prompt('Digite o mês: '));
+        }
+        if (dia == 31)
+        {   
+            while (mes == 2 || mes == 4 || mes == 6 || mes == 9 || mes == 11)
             {
-                alert('Mês Inválido!');
-                mes = parseInt(prompt('Digite o mês: '));
+                alert('Esse mês não tem 31 dias');
+                mes = parseInt(prompt('Digite o mês'));
             }
-        } 
+        }
+        if (dia == 30)
+        {
+            while (mes == 2)
+            {
+                alert('Esse mês não tem 30 dias');
+                mes = parseInt(prompt('Digite o mês'));
+            }
+        }
+
         ano = parseInt(prompt('Digite o ano'));
         if (ano < 0)
         {
@@ -36,7 +48,16 @@
                 ano = parseInt(prompt('Digite o ano: '));
             }
         }
-        document.write(dia + '/' + mes + '/' + ano); 
+        resto4 = ano % 4
+        resto100 = ano % 100
+        resto400 = ano % 400
+        if (dia == 29 && mes == 2 && resto4 != 0)
+        {
+            //if (resto100 == 0 && resto400 != 0) SÓ FALTA ESSE DETALHE
+                alert(ano + ' não é um ano bissexto. Portanto, fevereiro não tem 29 dias');
+                ano = parseInt(prompt('Digite o ano: '));
+        }
+        document.write(dia + '/' + mes + '/' + ano);
     </script>
 </body>
 </html>

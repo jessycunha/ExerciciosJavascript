@@ -9,25 +9,24 @@
 <body>
     <script>
         //O Departamento Estadual de Meteorologia lhe contratou para desenvolver um programa que leia um conjunto indeterminado de temperaturas e informe ao final a menor e a maior temperatura informadas, bem como a média das temperaturas. O programa deve parar de ler as temperaturas quando for digitado -99
-        maior = false;
-        menor = false;
+        maior = true;
+        menor = true;
+        soma = 0;
+        i = 0;
         while (true)
         {   
             t = parseInt(prompt('Digite a temperatura'));
             if (t == -99)
                 break;
-            soma = t;
             soma = soma + t;
-            if (maior > t)  
-                maior = t;
-            if (menor < t)
+            if (menor > t)
                 menor = t;
-            i = 1;
+            if (maior < t)
+                maior = t;
             i++;
         }
         media = soma / i;
         document.write('A maior temperatura registrada foi: ' + maior + '<br> A menor temperatura registrada foi: ' + menor + '<br> Média das temperaturas registradas: ' + media.toFixed(2) + 'ºC');
-       
     </script>
 </body>
 </html>
