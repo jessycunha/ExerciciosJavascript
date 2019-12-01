@@ -9,10 +9,11 @@
 <body>
     <script>
         //O Departamento Estadual de Meteorologia lhe contratou para desenvolver um programa que leia um conjunto indeterminado de temperaturas e informe ao final a menor e a maior temperatura informadas, bem como a média das temperaturas. O programa deve parar de ler as temperaturas quando for digitado -99
-        maior = true;
-        menor = true;
-        soma = 0;
-        i = 0;
+        t = parseInt(prompt('Digite a temperatura'));
+        maior = t;
+        menor = t;
+        soma = t;
+        i = 1;
         while (true)
         {   
             t = parseInt(prompt('Digite a temperatura'));
